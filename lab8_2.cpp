@@ -3,21 +3,32 @@
 using namespace std;
 
 int main(){
-    string name;
+    string name,movie,when,wtf;
     cout << "Fahsai: Sawadee ka...Can you tell me your name?" << "\n";
     cout << "?????: ";
     getline(cin,name);
     cout << "Fahsai: Wow!!! " << name << " is a really cool name." << "\n";
-    int ID;
+    string his_id,first_his_id,last_his_id;
     cout << "Fahsai: I think you are an Engineering student. What is your student ID?"<< endl;
     cout << name << ": ";
-    cin >> ID;
+    getline(cin,his_id);
+    first_his_id = his_id[0];
+    last_his_id = his_id[1];
+    his_id = first_his_id+last_his_id;
+    cout << "Fahsai: I think you may be GEAR " << stoi(his_id) - 12 << ". I have a free movie ticket for you." << endl;
+    cout << "Fahsai: Let's go to the cinema together!!!" << endl;
+    cout << "Fahsai: What movie do you want to watch?" << endl;
+    cout << name << ": ";
+    getline(cin,movie);
+    cout << "Fahsai: So....which day are you free to go with me?" << endl;
+    cout << name << ": ";
+    getline(cin,when);
+    cout << "Fahsai: " << when << "....that is OK!!! I'm looking forward to watching " << movie << " with you." << endl;
+    cout << name << ": ";
+    cin >> wtf;
+    cout << "Fahsai: 555+ see you " << when << ". Bye Bye \\(^ ^)/";
 
-
-    
-
-
-
+    return 0;
 }
 
 
