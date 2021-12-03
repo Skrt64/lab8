@@ -1,3 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string name;
+    cout << "Fahsai: Sawadee ka...Can you tell me your name?" << "\n";
+    cout << "?????: ";
+    getline(cin,name);
+    cout << "Fahsai: Wow!!! " << name << " is a really cool name." << "\n";
+    int ID;
+    cout << "Fahsai: I think you are an Engineering student. What is your student ID?"<< endl;
+    cout << name << ": ";
+    cin >> ID;
+
+
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
 //Dialog of the first example is given below.
 
 /*
